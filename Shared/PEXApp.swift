@@ -49,13 +49,14 @@ struct PEXApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Home()
-                .onReceive(pubDidFinishLaunching) { _ in
-                    //TODO: DEV
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        InteractionManager.shared.observeHotkey(kind: .mount)
-                    }
-                }
+            Text("Hello World!")
+//            Home()
+//                .onReceive(pubDidFinishLaunching) { _ in
+//                    //TODO: DEV
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                        InteractionManager.shared.observeHotkey(kind: .mount)
+//                    }
+//                }
                 .onChange(of: VaultManager.isSubscribed) { newState in
                     print("[MAIN] isSubscribed \(newState)")
                 }

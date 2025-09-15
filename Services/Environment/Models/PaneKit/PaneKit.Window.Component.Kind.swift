@@ -81,7 +81,7 @@ extension WindowComponent {
     
     struct Style {
         static var defaultWindowSize: CGSize {
-            .init(800, 48)
+            .init(400, 500)
         }
         
         static var defaultElementSize: CGSize {

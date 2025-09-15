@@ -18,6 +18,9 @@ struct PaneView: View {
                 .ignoresSafeArea()
                 .zIndex(0)
                 
+            Home()
+                .ignoresSafeArea()
+                .zIndex(2)
 //            Mount()
 //                .ignoresSafeArea()
 //                .zIndex(2)

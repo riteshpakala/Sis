@@ -19,9 +19,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 //        }
         
         //Window close
-        if let window = NSApplication.shared.windows.first {
-            window.close()
-        }
+//        if let window = NSApplication.shared.windows.first {
+//            window.close()
+//        }
         
         menuBarManager = MenuBarManager.shared
         menuBarManager?.setup()
